@@ -94,7 +94,7 @@ a:hover {
 }   
 
 #content, #social-icons {
-	width: 962px;
+	max-width: 962px;
 	margin: 0 auto;
 	position: relative;
 }	
