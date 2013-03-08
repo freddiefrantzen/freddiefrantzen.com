@@ -75,7 +75,7 @@ body {
 	font-family: AmaranthRegular;
 	font-size: 14px;
 	line-height: 28px;
-	padding: 56px 28px 0 28px;
+	padding: 56px 28px 56px 28px;
     background: #3dc9d2;
 }
 
@@ -121,6 +121,7 @@ div#bio p strong {
 
 div#social-icons {
     width: 340px; 
+    padding-bottom: 56px;
 }
 
 div.icon-wrap {
@@ -143,7 +144,6 @@ div.icon-wrap:hover {
           transform: scale(1.1);
 }
 
-
 div#linkedin-icon {
     left: 95px;
 }
@@ -156,10 +156,14 @@ div#email-icon {
     left: 285px;
 }
 
-div.last img {
-    margin-right: 0px;
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
 }
-
 
 @media screen and (max-width: 960px) {
     body {
