@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+:focus {
+    outline: 0;
+}
+body {
+    line-height: 1;
+    color: black;
+    background: white;
+}
+ol, ul {
+    list-style: none;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: "";
+}
+blockquote, q {
+    quotes: "" "";
+}
+
+@font-face {
+    font-family: 'AmaranthRegular';
+    src: url('fonts/Amaranth/Amaranth-webfont.eot');
+    src: url('fonts/Amaranth/Amaranth-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Amaranth/Amaranth-webfont.woff') format('woff'),
+         url('fonts/Amaranth/Amaranth-webfont.ttf') format('truetype'),
+         url('fonts/Amaranth/Amaranth-webfont.svg#AmaranthRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'AmaranthBold';
+    src: url('fonts/Amaranth/Amaranth-Bold-webfont.eot');
+    src: url('fonts/Amaranth/Amaranth-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Amaranth/Amaranth-Bold-webfont.woff') format('woff'),
+         url('fonts/Amaranth/Amaranth-Bold-webfont.ttf') format('truetype'),
+         url('fonts/Amaranth/Amaranth-Bold-webfont.svg#AmaranthBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	color: #303133;
+	border-top: 2px solid #666;
+	font-family: AmaranthRegular;
+	font-size: 14px;
+	line-height: 28px;
+	padding: 56px 28px 0 28px;
+    background: #3dc9d2;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+    -webkit-transition: color 450ms;
+      -moz-transition:  color 400ms;
+       -o-transition:   color 400ms; /*FIXME: Does not seem to be working*/
+          transition:   color 400ms;
+}   
+
+a:hover {
+    color: grey;
+    cursor: pointer;
+}   
+
+#content, #social-icons {
+	width: 962px;
+	margin: 0 auto;
+	position: relative;
+}	
+
+#bio {
+    margin-top: 40px;
+	margin-bottom: 60px;
+}
+
+#bio p {
+	font-size: 20px;
+	line-height: 30px;
+    letter-spacing: 1px;
+    text-align: justify;
+	font-family: AmaranthRegular; 
+    color: #FFF;
+    margin-bottom: 24px;
+    
+}	
+
+#bio p strong {
+   font-family: AmaranthBold;
+}
+
+div#social-icons {
+    width: 340px; 
+    margin: 0 auto;
+    position: relative;
+}
+
+div#social-icons div {
+    width: 55px;
+    height: 55px;
+    margin-left: -30px;
+    position: absolute;
+    top: 0px;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+div#social-icons div:hover {
+    webkit-transform: scale(1.1);
+}
+
+div#linkedin-icon {
+    left: 95px;
+}
+
+div#github-icon {
+    left: 190px;
+}
+
+div#email-icon {
+    left: 285px;
+}
+
+.icon-wrap img {
+    width: 55px;
+    height: 55px; 
+    cursor: pointer;
+}
+
+.last img {
+    margin-right: 0px;
+}
+
