@@ -89,9 +89,9 @@ a {
     text-decoration: none;
     color: #FFF;
     -webkit-transition: color 450ms;
-      -moz-transition:  color 400ms;
-       -o-transition:   color 400ms; /*FIXME: Does not seem to be working*/
-          transition:   color 400ms;
+      -moz-transition:  color 450ms;
+       -o-transition:   color 450ms;
+          transition:   color 450ms;
 }   
 
 a:hover {
@@ -131,19 +131,32 @@ div#social-icons {
 
 
 
-
-
-div#social-icons div {
+div.icon-wrap {
     width: 55px;
     height: 55px;
     margin-left: -30px;
     position: absolute;
     top: 0px;
     -webkit-transition: all .2s ease-in-out;
+      -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
 }
 
-div#social-icons div:hover {
+div.icon-wrap:hover {
     -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+
+
+
+div.icon-wrap img {
+    width: 55px;
+    height: 55px; 
+    cursor: pointer;
 }
 
 div#linkedin-icon {
@@ -158,13 +171,7 @@ div#email-icon {
     left: 285px;
 }
 
-.icon-wrap img {
-    width: 55px;
-    height: 55px; 
-    cursor: pointer;
-}
-
-.last img {
+div.last img {
     margin-right: 0px;
 }
 
