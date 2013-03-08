@@ -135,7 +135,7 @@ div#social-icons div {
 }
 
 div#social-icons div:hover {
-    webkit-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
 }
 
 div#linkedin-icon {
