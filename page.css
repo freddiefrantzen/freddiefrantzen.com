@@ -99,18 +99,18 @@ a:hover {
     cursor: pointer;
 }   
 
-#content, #social-icons {
-	max-width: 962px;
+div#bio, div#social-icons {
 	margin: 0 auto;
 	position: relative;
 }	
 
-#bio {
+div#bio {
+    max-width: 962px;
     margin-top: 40px;
 	margin-bottom: 60px;
 }
 
-#bio p {
+div#bio p {
 	font-size: 20px;
 	line-height: 30px;
     letter-spacing: 1px;
@@ -121,15 +121,17 @@ a:hover {
     
 }	
 
-#bio p strong {
+div#bio p strong {
    font-family: AmaranthBold;
 }
 
 div#social-icons {
     width: 340px; 
-    margin: 0 auto;
-    position: relative;
 }
+
+
+
+
 
 div#social-icons div {
     width: 55px;
